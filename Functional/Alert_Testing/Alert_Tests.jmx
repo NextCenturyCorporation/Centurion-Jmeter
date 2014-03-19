@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.4" jmeter="2.9 r1437961">
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -119,7 +119,13 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;name&quot;:&quot;Alert_${__time()}&quot;,&quot;severity&quot;: &quot;Warning&quot;,&quot;type&quot;:&quot;Weather&quot;,&quot;status&quot;:&quot;Valid&quot;,&quot;activationDate&quot;:&quot;${__time(YYYY-MM-dd)}&quot;}</stringProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;name&quot;:&quot;Alert_${__time()}&quot;,&#xd;
+	&quot;severity&quot;: &quot;Warning&quot;,&#xd;
+	&quot;type&quot;:&quot;Weather&quot;,&#xd;
+	&quot;status&quot;:&quot;Valid&quot;,&#xd;
+	&quot;activationDate&quot;:&quot;${__time(YYYY-MM-dd)}&quot;&#xd;
+}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -136,6 +142,7 @@
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
           <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
         </HTTPSamplerProxy>
