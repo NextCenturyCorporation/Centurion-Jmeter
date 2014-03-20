@@ -3,7 +3,7 @@
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.functional_mode">true</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments"/>
@@ -240,7 +240,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;name&quot;:&quot;Alert_${__time()}&quot;,&quot;severity&quot;: &quot;Warning&quot;,&quot;type&quot;:&quot;Weather&quot;,&quot;status&quot;:&quot;Valid&quot;,&quot;activationDate&quot;:&quot;${__time(YYYY-MM-dd)}&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;name&quot;:&quot;Alert_${__time()}&quot;,&quot;severity&quot;: &quot;Warning&quot;,&quot;type&quot;:&quot;Weather&quot;,&quot;status&quot;:&quot;Valid&quot;,&quot;activationDate&quot;:&quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ)}&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -447,7 +447,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;name&quot;:&quot;Alert_${__time()}&quot;,&quot;severity&quot;: &quot;Warning&quot;,&quot;type&quot;:&quot;Weather&quot;,&quot;status&quot;:&quot;Valid&quot;,&quot;activationDate&quot;:&quot;${__time(YYYY-MM-dd)}&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;name&quot;:&quot;Alert_${__time()}&quot;,&quot;severity&quot;: &quot;Warning&quot;,&quot;type&quot;:&quot;Weather&quot;,&quot;status&quot;:&quot;Valid&quot;,&quot;activationDate&quot;:&quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ)}&quot;}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -664,7 +664,7 @@
 &quot;severity&quot;: &quot;Warning&quot;,&#xd;
 &quot;type&quot;:&quot;Weather&quot;,&#xd;
 &quot;status&quot;:&quot;Valid&quot;,&#xd;
-&quot;activationDate&quot;:&quot;${__time(YYYY-MM-dd)}&quot;&#xd;
+&quot;activationDate&quot;:&quot;${__time(yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ)}&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
